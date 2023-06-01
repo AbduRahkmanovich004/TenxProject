@@ -1,0 +1,182 @@
+@import  "/css/_colors";
+
+@font-face {
+    font-family: "Inter";
+    src: url(/font/Inter-VariableFont_slnt\,wght.ttf);
+}
+// This code for boxs
+@for $i from 1 through 12 {
+    .col-#{$i}{
+        width: (100%/12)*$i;
+        
+    }
+}
+body{
+    width: 1920px;
+    height: 1080px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+div{
+    // border: 1px solid blue;
+}
+// logo part start
+.MainLogo{
+    height: 96px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    .logoimg{
+        padding-left: 2%;
+        width: 80px;
+    }
+    .logoMenu{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        .logoHover{
+            display: flex;
+            position: relative;
+            &::after{
+                content: "ewtergtergt";
+                width: 40px;
+                height: 90px;
+                position: absolute;
+                bottom: 3px;
+                left: 2px;
+                color: $greanHover;
+            }
+            &:hover{
+                color: $greanHover;
+            }
+        }
+    }
+    .logohaveSmile{
+        text-align: center;
+        border: 1px solid $pink;
+        border-radius: 9px;
+        margin: 0 50px;
+    }
+    .LogoProfile{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+// logo part stop
+// container start
+.MainContainer{
+    background-color: bac;
+    display: flex;
+    justify-content: center;
+}
+// leftContainer start
+.leftContainer{
+    background-color: $bacgraund;
+    display: flex;
+    flex-direction: column;
+    .lengthText{
+        margin: 20px;
+        height: 35px;
+        display: flex;
+        justify-content: space-between;
+        p{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px; 
+            transform: translateY(-19px)
+        }
+        img{
+            border-radius: 50%;
+            background-color: $white;
+            width: 29px;
+            height: 29px;
+        }
+    }
+    .bigContainer{
+        border-radius: 9px;
+        margin: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: $white;
+        height: 830px;
+        width: 905px;
+        gap: 30px;
+        .taibleChest{
+            border-radius: 9px;
+            height: 170px;
+            width: 850px;
+            background-color: $white;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            .childTableText1{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 24px;
+                gap: 20px;
+                padding: 0 10px;
+                height: 170px;
+                display: flex;
+                flex-direction: column;
+                span{
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 19px;
+                }
+            }
+            .childtableText2{
+                border-left: 2px solid $black;
+                height: 170px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 25px;
+                
+            }
+            &:hover{
+                background-color: $greanHover;
+            }
+
+        }
+    }
+}
+// leftContainer stop
+// rightContainer start
+.rightContainer{
+    background-color: $bacgraund;
+    display: flex;
+    flex-direction: column;
+    .lengthText{
+        margin: 20px;
+        height: 35px;
+        display: flex;
+        justify-content: space-between;
+        .firstTextLine{
+            height: 35px;
+            display: flex;
+            justify-content: space-around;
+        }
+        img{
+            border-radius: 50%;
+            background-color: $white;
+            width: 29px;
+            height: 29px;
+        }
+    }  
+}
+// rightContainer stop
+
+
+// container stop

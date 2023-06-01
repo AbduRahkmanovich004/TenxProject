@@ -1,0 +1,209 @@
+@font-face {
+  font-family: "Inter";
+  src: url(/font/Inter-VariableFont_slnt\,wght.ttf);
+}
+.col-1 {
+  width: 8.3333333333%;
+}
+
+.col-2 {
+  width: 16.6666666667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.3333333333%;
+}
+
+.col-5 {
+  width: 41.6666666667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.3333333333%;
+}
+
+.col-8 {
+  width: 66.6666666667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.3333333333%;
+}
+
+.col-11 {
+  width: 91.6666666667%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+body {
+  width: 1920px;
+  height: 1080px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.MainLogo {
+  height: 96px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.MainLogo .logoimg {
+  padding-left: 2%;
+  width: 80px;
+}
+.MainLogo .logoMenu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.MainLogo .logoMenu .logoHover {
+  display: flex;
+  position: relative;
+}
+.MainLogo .logoMenu .logoHover::after {
+  content: "ewtergtergt";
+  width: 40px;
+  height: 90px;
+  position: absolute;
+  bottom: 3px;
+  left: 2px;
+  color: #21ca2c;
+}
+.MainLogo .logoMenu .logoHover:hover {
+  color: #21ca2c;
+}
+.MainLogo .logohaveSmile {
+  text-align: center;
+  border: 1px solid rgb(241, 181, 18);
+  border-radius: 9px;
+  margin: 0 50px;
+}
+.MainLogo .LogoProfile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.MainContainer {
+  background-color: bac;
+  display: flex;
+  justify-content: center;
+}
+
+.leftContainer {
+  background-color: rgb(144, 138, 138);
+  display: flex;
+  flex-direction: column;
+}
+.leftContainer .lengthText {
+  margin: 20px;
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+}
+.leftContainer .lengthText p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  transform: translateY(-19px);
+}
+.leftContainer .lengthText img {
+  border-radius: 50%;
+  background-color: white;
+  width: 29px;
+  height: 29px;
+}
+.leftContainer .bigContainer {
+  border-radius: 9px;
+  margin: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  height: 830px;
+  width: 905px;
+  gap: 30px;
+}
+.leftContainer .bigContainer .taibleChest {
+  border-radius: 9px;
+  height: 170px;
+  width: 850px;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.leftContainer .bigContainer .taibleChest .childTableText1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  gap: 20px;
+  padding: 0 10px;
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+}
+.leftContainer .bigContainer .taibleChest .childTableText1 span {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+.leftContainer .bigContainer .taibleChest .childtableText2 {
+  border-left: 2px solid black;
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+.leftContainer .bigContainer .taibleChest:hover {
+  background-color: rgb(0, 255, 38);
+}
+
+.rightContainer {
+  background-color: rgb(130, 128, 128);
+  display: flex;
+  flex-direction: column;
+}
+.rightContainer .lengthText {
+  margin: 20px;
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+}
+.rightContainer .lengthText .firstTextLine {
+  height: 35px;
+  display: flex;
+  justify-content: space-around;
+}
+.rightContainer .lengthText img {
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  width: 29px;
+  height: 29px;
+}/*# sourceMappingURL=main.css.map */
